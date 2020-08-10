@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+html {
+    background: #24292e;
+}
+.name-c { padding: 5px 3px !important; color: #fff; }
+.navbar {
+    background-color: #24292e;
+    padding: 20px 150px;
+}
+.avatar-google { width: 35px; height: auto; border-radius: 50%; }
+.navbar .nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .nav .igithub:hover {
+    transition: 300ms;
+    transform: scale(1.2);
+    color: #ffffff7d !important;
+}
+
+.navbar .nav .igithub {
+    transition: 300ms;
+}
+
+.navbar .nav hr {
+    border-color: #fff;
+    height: 20px;
+    margin-block-start: 7px;
+    margin: auto 13px;
+}
+
+.navbar .nav .iinfo {
+    position: relative;
+    top: 7px;
+}
+
+.navbar .nav h3 {
+    width: 100% !important;
+    text-align: left;
+    padding: 0 20px;
+    position: relative;
+    color: #fff;
+    float: right;
+    line-height: 14px;
+    top: 3px;
+    font-family: 'Lato', sans-serif;
+    height: fit-content;
+    font-weight: 100;
+}
+
+.navbar .nav b {
+    font-weight: 400;
+    color: #ffffff7d;
+}
+
+/* 
+Media screen 600px ( Mobile ).
+creator ( sωıтcн ).
+*/
+
+@media only screen and (max-width: 600px) {
+    .navbar .nav { padding: 0 40%; }
+    .navbar .nav h3 { visibility: hidden; }
+    .navbar .nav .iinfo { visibility: hidden; }
+    .navbar .nav hr { visibility: hidden ; }
+}

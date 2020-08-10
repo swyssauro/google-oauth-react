@@ -1,0 +1,95 @@
+.container {
+    margin: 0 10%;
+    display: flex;
+    justify-content: center;
+}
+.container .tittle {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 29px;
+}
+
+.container .description {
+    color: #8f9294;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+}
+.description-bols {
+    color: #8f9294;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+}
+.tittle-bols {
+    color: #fff;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.modal-info {
+    margin: 0 10%;
+}
+
+.container .creator {
+    color: #8f9294;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.active {
+    color: #fff;
+}
+
+.container .card {
+    width: 25%;
+    padding: 20px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: 200ms;
+}   
+
+.container .card:hover {
+    transition: 500ms;
+    transform: scale(1.1) !important;
+    background: #292e33bf;
+}
+
+.container .card .info-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .card .info-card .stars {
+    margin: 0 2px;
+}
+
+.container .checklist {
+    font-size: 15px;
+    color: #8f9294;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    align-items: center;
+    display: flex;
+}
+
+.backjlong {
+    background: url('./backengroun.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1413px;
+}
+
+/* 
+Media screen 600px ( Mobile ).
+creator ( sωıтcн ).
+*/
+
+@media only screen and (max-width: 600px) {
+    .backjlong  { background-size: contain; }
+}
