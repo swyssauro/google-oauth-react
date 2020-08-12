@@ -9,6 +9,7 @@
     "history": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-github-login": "^1.0.3",
     "react-google-login": "^5.1.21",
     "react-icons": "^3.10.0",
     "react-router-dom": "^5.1.2",
