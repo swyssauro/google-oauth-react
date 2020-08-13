@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { GoogleLogin, GoogleLogout } from 'react-google-login';
+import { GoogleLogin } from 'react-google-login';
 import { history } from '../../history.js';
 
 const CLIENT_ID = '';
@@ -54,15 +54,7 @@ class GoogleBtn extends Component {
   render() {
     return (
       <div>
-        {this.state.isLogined ?
-          <GoogleLogout className="googleLindo"
-            clientId={CLIENT_ID}
-            buttonText='Deslogar'
-            icon = { false }
-            onLogoutSuccess={this.logout}
-            onFailure={this.handleLogoutFailure}
-          >
-          </GoogleLogout> : <GoogleLogin  className="googleLindo"
+         <GoogleLogin  className="googleLindo"
             clientId={CLIENT_ID}
             buttonText="Google"
             icon = { false }
@@ -71,7 +63,6 @@ class GoogleBtn extends Component {
             cookiePolicy={'single_host_origin'}
             responseType='code,token'
           />
-        }
       </div>
     )
   }

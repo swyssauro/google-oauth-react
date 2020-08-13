@@ -8,6 +8,7 @@ const GithubLink = "https://github.com/swyssauro/";
 
 export default function Navbar() {
     return (
+        <>
         <div className="navbar">
             <div className="nav">
                 <a href="/"><FiKey className="igithub" size="30" color="#fff" /></a>
@@ -18,5 +19,6 @@ export default function Navbar() {
                 <a href={ GithubLink } target="_blank" rel="noopener noreferrer"><FiInfo className="iinfo" size="20" color="#fff" /></a>
             </div>
         </div>
+        </>
     );  
 }
