@@ -13,6 +13,10 @@ html {
     background-color: #24292e;
     padding: 20px 150px;
 }
+.pointer-clicker {
+    cursor: pointer;
+    margin-right: 5px;
+}
 .avatar-google { width: 35px; height: auto; border-radius: 50%; }
 .navbar .nav {
     display: flex;
