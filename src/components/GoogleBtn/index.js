@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { GoogleLogin } from 'react-google-login';
 import { history } from '../../history.js';
 
-const CLIENT_ID = '';
+const CLIENT_ID = " ";
 
 class GoogleBtn extends Component {
   constructor(props) {
@@ -14,9 +14,6 @@ class GoogleBtn extends Component {
     };
 
     this.login = this.login.bind(this);
-    this.handleLoginFailure = this.handleLoginFailure.bind(this);
-    this.logout = this.logout.bind(this);
-    this.handleLogoutFailure = this.handleLogoutFailure.bind(this);
   }
 
   login(response) {
@@ -31,24 +28,6 @@ class GoogleBtn extends Component {
     history.push('/explore')
     return history.go();
     }
-  }
-
-  logout(response) {
-    this.setState(state => ({
-      isLogined: false,
-      accessToken: ''
-    }));
-    localStorage.clear();
-    history.push('');
-    history.go();
-  }
-
-  handleLoginFailure(response) {
-    alert('Failed to log in')
-  }
-
-  handleLogoutFailure(response) {
-    alert('Failed to log out')
   }
 
   render() {
