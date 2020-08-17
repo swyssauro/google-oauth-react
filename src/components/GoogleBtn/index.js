@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { GoogleLogin } from 'react-google-login';
 import { history } from '../../history.js';
 
-const CLIENT_ID = " ";
+const CLIENT_ID = "_";
 
 class GoogleBtn extends Component {
   constructor(props) {
@@ -22,6 +22,7 @@ class GoogleBtn extends Component {
         isLogined: true,
         accessToken: response.accessToken
       }));
+    
     localStorage.setItem('name', response.profileObj.givenName);
     localStorage.setItem('avatar', response.profileObj.imageUrl);
 
@@ -38,7 +39,6 @@ class GoogleBtn extends Component {
             buttonText="Google"
             icon = { false }
             onSuccess={this.login}
-            onFailure={this.handleLoginFailure}
             cookiePolicy={'single_host_origin'}
             responseType='code,token'
           />

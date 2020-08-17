@@ -8,7 +8,7 @@ import { FiKey, FiInfo, FiXCircle} from 'react-icons/fi';
 
 const name_g = localStorage.getItem('name');
 const avatar_g = localStorage.getItem('avatar');
-const GithubLink = "https://github.com/swyssauro";
+const githubLink = "https://github.com/swyssauro";
 
 export default function Navbar() {
 
@@ -28,7 +28,7 @@ export default function Navbar() {
                     <Img src={avatar_g} className="avatar-google" unloader={<img  className="avatar-google" src='https://cdn1.iconfinder.com/data/icons/user-pictures/100/unknown-512.png' alt="img"/>} />
                     <hr />
                     <b onClick={handleLogout} target="_blank" rel="noopener noreferrer"><FiXCircle className="iinfo pointer-clicker" size="20" color="#ff5c5c" /></b>
-                    <a href={GithubLink} target="_blank" rel="noopener noreferrer"><FiInfo className="iinfo" size="20" color="#fff" /></a>
+                    <a href={githubLink} target="_blank" rel="noopener noreferrer"><FiInfo className="iinfo" size="20" color="#fff" /></a>
                 </div>
             </div>
         </>
